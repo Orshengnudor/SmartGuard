@@ -1,0 +1,41 @@
+{
+  "name": "smartguard-backend",
+  "version": "1.0.0",
+  "description": "SmartGuard backend for delegation, risk scoring, and automation on Monad Testnet",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test.js",
+    "clean": "rm -rf reports node_modules package-lock.json",
+    "reinstall": "npm run clean && npm install"
+  },
+  "keywords": [
+    "smartguard",
+    "monad",
+    "blockchain",
+    "security",
+    "delegation",
+    "risk-scoring",
+    "automation"
+  ],
+  "author": "SmartGuard Team",
+  "license": "MIT",
+  "dependencies": {
+    "alchemy-sdk": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "node-cron": "^4.2.1",
+    "viem": "^2.38.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/smartguard-backend"
+  }
+}
