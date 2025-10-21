@@ -6,7 +6,7 @@ import axios from 'axios';
 import { createPublicClient, createWalletClient, custom, http, parseEther, formatEther } from 'viem';
 import { monadTestnet } from 'viem/chains'; // or whichever chain you're using
 
-const backendURL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+const backendURL = import.meta.env.VITE_BACKEND_URL || "https://smartguard-backend.vercel.app";
 
 // SmartGuard Contract ABI
 const SMARTGUARD_ABI = [
